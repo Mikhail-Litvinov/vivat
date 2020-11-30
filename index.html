@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="fonts/Icons/css/fontello-ie7.css">
     <link rel="stylesheet" href="fonts/Icons/css/fontello.css">
     <link rel="stylesheet" href="JavaScripts/calendar/lib/main.css">
+    <link rel="stylesheet" href="CSS/datepicker.css">
     <link rel="stylesheet" href="CSS/main.css">
     <link rel="stylesheet" href="CSS/home.css">
 
@@ -33,7 +34,7 @@
                     </button>
                 </div>
                 <div class="col-1-2 login-button-container">
-                    <button class="login-button">
+                    <button class="login-button" id="open-enter-form">
                         Войти
                     </button>
                 </div>
@@ -48,8 +49,8 @@
                     <li><a href="Pages/gallery.html">Галерея</a></li>
                     <li><a href="Pages/services.html">Услуги и аренда</a></li>
                     <li><a href="Pages/events.html">Мероприятия</a></li>
-                    <li><a href="#">Новости</a></li>
-                    <li><a href="#">Контакты</a></li>
+                    <li><a href="Pages/news.html">Новости</a></li>
+                    <li><a href="Pages/contacts.html">Контакты</a></li>
                 </ul>
             </div>
             <div class="menu-contacts-wrapper">
@@ -66,6 +67,57 @@
             </div>
         </div>
         <!-- modal menu end -->
+        <!-- modal enter or register -->
+        <div class="modal-enter-wrapper">
+            <div class="modal-enter-content">
+                <span class="close-modal">x</span>
+                <div class="modal-enter-header">
+                    <button class="modal-enter-choose">Войти</button>
+                    <button class="modal-enter-choose">Регистрация</button>
+                </div>
+                <div class="modal-enter-content-wrapper">
+                    <p class="login-title">Войти</p>
+                    <label class="login-label" for="">Логин/email
+                        <input class="login-input" type="text" placeholder="example@gmail.com">
+                    </label>
+                    <label for="" class="password-label">Пароль
+                        <input type="text" class="password-input">
+                    </label>
+                    <div class="forgot-password-wrapper"><a href="" class="forgot-password">Забыли пароль?</a></div>
+                    <button class="login-button">Войти</button>
+                </div>
+                <div class="modal-register-content-wrapper">
+                    <p class="register-title">Регистрация</p>
+                    <label for="" class="surname-label">
+                        Имя
+                        <span class="required">*</span>
+                        <input type="text" class="surname-input" placeholder="Иванов">
+                    </label>
+                    <label for="" class="name-label">
+                        Фамилия
+                        <span class="required">*</span>
+                        <input type="text" class="name-input" placeholder="Иван">
+                    </label>
+                    <label for="" class="middle-name-label">
+                        Отчество
+                        <span class="required">*</span>
+                        <input type="text" class="middle-name-input" placeholder="Иванович">
+                    </label>
+                    <label for="" class="birth-date-label">
+                        Дата рождения
+                        <span class="required">*</span>
+                        <input type="text" class="datepicker-here">
+                    </label>
+                    <label for="" class="email-label">
+                        Адрес электронной почты
+                        <span class="required">*</span>
+                        <input type="text" class="email-input" placeholder="example@gmail.com">
+                    </label>
+                    <button class="login-button">Регистрация</button>
+                </div>
+            </div>
+        </div>
+        <!-- modal enter or register -->
     </header>
     <!-- header-end -->
     <div id="content">
@@ -176,7 +228,6 @@
             </div>
         </div>
     </div>
-
     <footer>
         <div class="footer-container">
             <div class="footer-map-block" id="map">
@@ -191,8 +242,8 @@
                     <li><a href="Pages/gallery.html">Галерея</a></li>
                     <li><a href="Pages/services.html">Услуги и аренда</a></li>
                     <li><a href="Pages/events.html">Мероприятия</a></li>
-                    <li><a href="#">Новости</a></li>
-                    <li><a href="#">Контакты</a></li>
+                    <li><a href="/Pages/news.html">Новости</a></li>
+                    <li><a href="/Pages/contacts.html">Контакты</a></li>
                     <li><a href="#">Политика конфиденциальности</a></li>
                 </ul>
             </div>
@@ -232,6 +283,7 @@
     <script src="JavaScripts/jquery-3.5.1.js"></script>
     <script src="JavaScripts/YandexMap/map.js"></script>
     <script src="JavaScripts/menu.js"></script>
+    <script src="JavaScripts/date-picker/datepicker.js"></script>
     <!-- global scripts end -->
     <!-- page scripts -->
     <script src="JavaScripts/calendar/lib/main.js"></script>

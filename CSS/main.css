@@ -292,6 +292,151 @@ header {
 
 /* modal menu end */
 
+/* modal enter or register */
+
+.modal-enter-wrapper {
+    position: fixed;
+    top: -100%;
+    width: max-content;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgb(49 49 49);
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    transition: 0.6s ease-in-out;
+}
+
+.modal-enter-wrapper.oppened {
+    top: 6vh;
+}
+
+.modal-enter-content {
+    width: 34vh;
+    padding: 1vh;
+    position: relative;
+}
+
+.close-modal {
+    position: absolute;
+    top: 0vh;
+    right: 1vh;
+    color: whitesmoke;
+    font-size: 130%;
+    cursor: pointer;
+}
+
+.close-modal:hover {
+    color: #ff0a0a;
+}
+
+.modal-enter-header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1vh 0;
+}
+
+.modal-enter-choose {
+    background-color: transparent;
+    color: whitesmoke;
+    margin: 0 1vh;
+    font-size: 100%;
+    border: 1px solid transparent;
+    padding: 0.5vh 1vh;
+}
+
+.modal-enter-choose:hover {
+    border: 1px solid #ff0a0a;
+    color: #ff0a0a;
+}
+
+.modal-enter-choose.active {
+    background-color: whitesmoke;
+    color: #5f5f5f;
+}
+
+.modal-enter-content-wrapper, .modal-register-content-wrapper {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 0;
+    overflow: hidden;
+    transition: 0.6s ease-in-out;
+}
+
+.login-title, .register-title {
+    width: 100%;
+    color: whitesmoke;
+    margin-bottom: 1vh;
+}
+
+.login-label, .password-label, .surname-label, .name-label, .middle-name-label, .birth-date-label, .email-label {
+    width: 100%;
+    color: whitesmoke;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 1vh;
+}
+
+.login-input, .password-input, .surname-input, .name-input, .middle-name-input, .email-input, .datepicker-here {
+    width: 100%;
+    height: 3vh;
+    margin: 1vh 0;
+    background-color: transparent;
+    border: 1px solid whitesmoke;
+    padding: 0 1vh;
+    color: whitesmoke;
+    font-size: 100%;
+}
+
+.login-input:hover, .password-input:hover, .surname-input:hover, .name-input:hover, .middle-name-input:hover, .email-input:hover, .datepicker-here:hover {
+    border-color: #ff0a0a;
+    box-shadow: 0 0 10px 1px #ff0a0a;
+}
+
+.login-input:hover::placeholder, .password-input:hover::placeholder, .surname-input:hover::placeholder, 
+.name-input:hover::placeholder, .middle-name-input:hover::placeholder, .email-input:hover::placeholder {
+    color: #ff0a0a;
+    text-shadow: 0 0 10px #ff0a0a;
+}
+
+.forgot-password-wrapper {
+    width: 100%;
+    margin-bottom: 1vh;
+    display: flex;
+    justify-content: center;
+}
+
+.forgot-password {
+    color: #5f5f5f;
+    position: relative;
+}
+
+.forgot-password::before {
+    width: 0%;
+    content: "";
+    bottom: 0;
+    position: absolute;
+    border-bottom: 0px solid whitesmoke;
+    transition: 0.6s ease-in-out;
+}
+
+.forgot-password:hover {
+    color: whitesmoke;
+}
+
+.forgot-password:hover::before {
+    width: 100%;
+    border-bottom: 1px solid whitesmoke;
+}
+
+.required {
+    color: #ff0a0a;
+}
+
+/* modal enter or register end */
+
 .header-link-prev {
     color: #5f5f5f;
 }
