@@ -156,3 +156,72 @@
 /* right-column end */
 
 /* content-end */
+
+/* media style */
+
+/* global media */
+
+@media screen and (min-width:0px) and (max-width:1024px) { 
+    .header-navigation {
+        font-size: 100%;
+        padding-bottom: 4vh;
+    }
+
+    .page-title-1 {
+        font-size: 80%;
+        padding-bottom: 1vh;
+    }
+
+    .page-title-2 {
+        display: none;
+    }
+
+    .header-content-wrapper {
+        background-image: url(/images/services/elegant-girl-farm-wiith-horsem.jpg);
+    }
+
+    .contacts-content {
+        flex-wrap: wrap;
+        background-color: #131313;
+    }
+
+    .left-column, .right-column {
+        width: 100%;
+        padding: 0 1vh;
+    }
+}
+
+/* ipad */
+
+@media screen and (min-width:541px) and (max-width: 768px) { 
+    .header-navigation {
+        font-size: 120%;
+        padding-bottom: 5vh;
+    }
+
+    .page-title-1 {
+        font-size: 120%;
+        padding-bottom: 5vh;
+    }
+}
+
+/* ipad-pro */
+
+@media screen and (min-width:769px) and (max-width: 1024px) {
+    .header-navigation {
+        font-size: 190%;
+        padding-bottom: 5vh;
+    }
+
+    .page-title-1 {
+        font-size: 180%;
+        padding-bottom: 5vh;
+    }
+
+    .contacts-content {
+        font-size: 160%;
+    }
+}
+
+
+/* media style end */

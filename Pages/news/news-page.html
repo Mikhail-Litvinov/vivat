@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/CSS/stylesheet.css">
+    <link rel="stylesheet" href="/fonts/Icons/css/animation.css">
+    <link rel="stylesheet" href="/fonts/Icons/css/fontello-codes.css">
+    <link rel="stylesheet" href="/fonts/Icons/css/fontello-embedded.css">
+    <link rel="stylesheet" href="/fonts/Icons/css/fontello-ie7-codes.css">
+    <link rel="stylesheet" href="/fonts/Icons/css/fontello-ie7.css">
+    <link rel="stylesheet" href="/fonts/Icons/css/fontello.css">
+    <link rel="stylesheet" href="/JavaScripts/calendar/lib/main.css">
+    <link rel="stylesheet" href="/CSS/main.css">
+    <link rel="stylesheet" href="/CSS/news.css">
+
+</head>
+
+<body>
+    <!-- header -->
+    <header id="header">
+        <div class="header-container">
+            <div class="flex-row">
+                <div class="col-1-2 menu-button-container">
+                    <button class="menu-button">
+                        <div class="menu-ind">
+                            <div class="line"></div>
+                            <div class="line"></div>
+                        </div>
+                        <span>Меню</span>
+                    </button>
+                </div>
+                <div class="col-1-2 login-button-container">
+                    <button class="search-button"><span class="search-icon"></span></button>
+                    <button class="profile-button"><span class="profile-icon"></span>
+                    </button>
+                    <button class="login-button" id="open-enter-form">
+                        Войти
+                    </button>
+                    <div class="profile-preview-wrapper">
+                        <div class="profile-preview-row">
+                            <div class="profile-preview-photo">
+                                <img src="images/profile/114296480-businessman-avatar-icon-profession-logo-male-character-a-man-in-suit-people-specialists-flat-simple-.jpg"
+                                    alt="" width="100%">
+                            </div>
+                            <div class="profile-preview-data">
+                                <div class="profile-preview-name">
+                                    <p>Иванов Иван Иванович</p>
+                                </div>
+                                <div class="profile-preview-address">
+                                    RU | Moscow
+                                </div>
+                            </div>
+                        </div>
+                        <div class="profile-preview-row" style="flex-wrap: wrap;">
+                            <a href="/Pages/profile/profile.html"><button class="profiel-preview-button">В
+                                    профиль</button></a>
+                            <a href=""><button class="profiel-preview-button">Выйти</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- modal-menu -->
+        <div class="modal-menu">
+            <div class="menu-list-wrapper">
+                <ul class="menu-list">
+                    <li><a href="/index.html">Главная</a></li>
+                    <li><a href="/Pages/about.html">О нас</a></li>
+                    <li><a href="/Pages/gallery.html">Галерея</a></li>
+                    <li><a href="/Pages/services.html">Услуги и аренда</a></li>
+                    <li><a href="/Pages/events.html">Мероприятия</a></li>
+                    <li><a href="/Pages/news.html">Новости</a></li>
+                    <li><a href="/Pages/contacts.html">Контакты</a></li>
+                </ul>
+            </div>
+            <div class="menu-contacts-wrapper">
+                <ul class="contacts-list">
+                    <li><a href="#">+7 900 000 000</a></li>
+                    <li><a href="#">info@vivat.ru</a></li>
+                    <li><a href="#">г.Москва, Замечательный проспект 1</a></li>
+                </ul>
+                <ul class="social-links">
+                    <li><a href="#" class="vk-button"></a></li>
+                    <li><a href="#" class="facebook-icon"></a></li>
+                    <li><a href="#" class="instagram-icon"></a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- modal menu end -->
+        <!-- modal enter or register -->
+        <div class="modal-enter-wrapper">
+            <div class="unicorn-wrapper">
+                <div class="unicorn-content">
+                    <img src="/images/unicorn/1.png" alt="" width="100%">
+                </div>
+            </div>
+            <div class="modal-enter-content">
+                <span class="close-modal">x</span>
+                <div class="modal-enter-header">
+                    <button class="modal-enter-choose">Войти</button>
+                    <button class="modal-enter-choose">Регистрация</button>
+                </div>
+                <div class="modal-enter-content-wrapper">
+                    <p class="login-title">Войти</p>
+                    <label class="login-label" for="">Логин/email
+                        <input class="login-input" type="text" placeholder="example@gmail.com">
+                    </label>
+                    <label for="" class="password-label">Пароль
+                        <input type="text" class="password-input">
+                    </label>
+                    <div class="forgot-password-wrapper"><a href="" class="forgot-password">Забыли пароль?</a></div>
+                    <button class="login-button">Войти</button>
+                </div>
+                <div class="modal-register-content-wrapper">
+                    <p class="register-title">Регистрация</p>
+                    <label for="" class="surname-label">
+                        Имя
+                        <span class="required">*</span>
+                        <input type="text" class="surname-input" placeholder="Иванов">
+                    </label>
+                    <label for="" class="name-label">
+                        Фамилия
+                        <span class="required">*</span>
+                        <input type="text" class="name-input" placeholder="Иван">
+                    </label>
+                    <label for="" class="middle-name-label">
+                        Отчество
+                        <span class="required">*</span>
+                        <input type="text" class="middle-name-input" placeholder="Иванович">
+                    </label>
+                    <label for="" class="birth-date-label">
+                        Дата рождения
+                        <span class="required">*</span>
+                        <input type="text" class="datepicker-here">
+                    </label>
+                    <label for="" class="email-label">
+                        Адрес электронной почты
+                        <span class="required">*</span>
+                        <input type="text" class="email-input" placeholder="example@gmail.com">
+                    </label>
+                    <button class="login-button">Регистрация</button>
+                </div>
+            </div>
+        </div>
+        <!-- modal enter or register -->
+        <!-- modal search -->
+        <div class="search-wrapper">
+            <div class="search-container">
+                <input type="text" class="search-input" placeholder="Введите поисковой запрос">
+                <span class="search-icon"></span>
+            </div>
+            <span class="close-modal">x</span>
+        </div>
+        <!-- modal search end -->
+    </header>
+    <!-- header-end -->
+    <!-- content -->
+    <div id="content">
+        <div class="header-content-wrapper content-block">
+            <div class="header-bg"></div>
+            <div class="blur-1"></div>
+            <div class="blur-2"></div>
+            <div class="blur-3"></div>
+            <div class="header-title-wrapper">
+                <div class="header-navigation">
+                    <a href="/index.html" class="header-link-prev">Главная</a>
+                    <a href="/Pages/news.html" class="header-link-prev">Новости</a>
+                    <a href="#" class="header-link-current">Скачки белых лошадей 2020</a>
+                </div>
+                <div class="header-title">
+                    <h1>Скачки белых лошадей 2020</h1>
+                    <h2>Конно-спортивный клуб "Виват, Россия!"</h2>
+                </div>
+                <div class="page-title-container">
+                    <p class="page-title-1">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam illo id beatae dolores recusandae
+                        et repellat ratione! Culpa accusamus consequatur quae ipsam quidem, reiciendis distinctio
+                        ratione aut dolore praesentium omnis quis nam modi ea architecto eveniet sunt exercitationem,
+                        totam quas aperiam cupiditate harum vero ex nihil. Aut nisi adipisci amet fugit, aliquid vel
+                        temporibus quos id provident, esse illo explicabo animi inventore at numquam? Accusantium ab
+                        dolor odit repudiandae possimus tempora eveniet autem, reprehenderit voluptatum consectetur nemo
+                        ipsam nesciunt consequuntur sequi fuga odio voluptatem, natus pariatur ullam temporibus sint
+                        rerum consequatur. Quibusdam quod sapiente debitis nulla, ad omnis ratione minima.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="news-content content-block">
+            <div class="news-navigation-row">
+                <a href="">Назад</a>
+            </div>
+            <div class="news-article-wrapper">
+                <article class="news-article">
+                    <h2 class="article-titles">Скачки очень белых лошадей</h2>
+                    <p> <img src="/images/news/yael-gonzalez-jd9UEc8Sc58-unsplash.jpg" alt="" style="float: left;"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla illo fugiat aspernatur ad, in
+                        quaerat praesentium libero, iure porro cum optio rem repellat quibusdam, asperiores ipsum aut
+                        nisi vero excepturi iste qui similique. Itaque cupiditate ad tempora possimus delectus enim,
+                        nobis modi sapiente dolorum expedita reiciendis obcaecati? Illo laboriosam, dolorum sunt
+                        reprehenderit molestiae voluptates minus veritatis? Veniam sapiente magni inventore! Facere et
+                        eaque asperiores maiores eveniet quidem minima ex consequuntur nisi repellat? Fugit ullam eius
+                        officiis nam cum dignissimos. Quaerat voluptate, labore accusantium architecto soluta officia
+                        hic harum cum ex esse? Numquam nihil laudantium voluptatum, corrupti quos ut vitae nobis? Ipsam
+                        libero nesciunt commodi sed fugiat magnam illo odio consequatur rerum hic autem minus, omnis
+                        iure veniam labore reiciendis, facere repellat inventore corporis consequuntur nisi cum deserunt
+                        architecto? Totam nemo, eaque numquam optio consequuntur voluptatem amet vel! Totam magni optio
+                        quis earum ipsam aperiam? Sequi omnis recusandae fugiat, minima corrupti eligendi consectetur
+                        aut molestiae id nemo voluptate commodi. Harum maxime consequatur architecto voluptates
+                        molestias eius. Autem voluptatum sed illum, adipisci eum, mollitia ipsam repellendus modi nisi
+                        maiores ipsa alias in! Voluptatem aspernatur exercitationem soluta molestiae quo harum aliquam
+                        consequatur, quis ullam est quibusdam labore quas voluptas dolorum vero ea fugit sapiente at
+                        nemo accusantium quos. Itaque sapiente culpa ad sequi veritatis, libero illo qui, tempora vero
+                        inventore mollitia magni autem ea nesciunt quod! Temporibus fuga vitae reprehenderit aliquam
+                        facere accusantium officia ad? Corporis, dolores ipsam sunt quam ipsum, quas velit facilis nihil
+                        nostrum ducimus maiores quisquam dolore maxime quae ratione.</p>
+                    <p> <img src="/images/news/yael-gonzalez-jd9UEc8Sc58-unsplash.jpg" alt="" style="float: right;"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, laudantium temporibus
+                        placeat, deserunt numquam odit rerum ad sint nobis et illum ipsum, voluptas ipsa minima. Veniam
+                        rem corporis, cumque ad at architecto, quisquam, modi facere dicta laudantium ab similique
+                        excepturi nesciunt quos. Unde pariatur porro velit illum quo assumenda autem eveniet cum
+                        expedita? Odio, accusamus commodi nostrum nesciunt corporis iusto perferendis magni modi ratione
+                        cumque iste doloribus ducimus, labore dolores impedit expedita. Asperiores pariatur aspernatur
+                        voluptate illum veniam, iste autem dignissimos aliquid laudantium eaque! Nobis tempora, vitae
+                        et, dolores pariatur architecto eveniet eaque repellendus aperiam voluptate culpa voluptatem
+                        rerum alias veritatis, placeat maxime! Quas numquam id quisquam aliquam laborum ipsam expedita
+                        impedit! Totam voluptates asperiores cumque? Nulla alias cupiditate illum eum? Maiores veniam
+                        atque quos assumenda praesentium, molestias dignissimos error amet magni deserunt minima harum
+                        tenetur quasi ullam repellendus, doloribus cumque, nam officiis nisi ea! Aspernatur nihil
+                        blanditiis dignissimos asperiores velit optio? Totam dolorem quod similique iusto assumenda et
+                        culpa provident veritatis sed vitae commodi dolore cupiditate, cum blanditiis, eum eos deleniti
+                        porro adipisci pariatur atque neque aperiam eveniet. Facilis fuga, in est ipsa iste dolorem
+                        optio, aspernatur ut, porro harum dignissimos quas? Expedita enim veritatis delectus voluptatum?
+                        Libero, maxime. Nihil praesentium maiores odio aliquid sapiente architecto eum necessitatibus,
+                        accusamus deleniti! Dolorum facere accusamus veniam at? Pariatur praesentium ipsa commodi a ab
+                        voluptates iusto, odio consequuntur saepe, libero, officiis perspiciatis ipsam dolor repellat.
+                        Natus corporis ad voluptatum delectus sit cum non reiciendis dolore sunt, magnam labore qui id
+                        odio perferendis!</p>
+                </article>
+                <div class="news-navigation-row">
+                    <a href="" class="blog-page-keywords">Лошади</a>
+                    <a href="" class="blog-page-keywords">Белые</a>
+                    <a href="" class="blog-page-keywords">Скачки</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- content end -->
+    <!-- footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-map-block" id="map">
+
+            </div>
+
+            <div class="footer-navigation-block">
+                <p class="footer-title">Навигация</p>
+                <ul class="footer-menu-list">
+                    <li><a href="/index.html">Главная</a></li>
+                    <li><a href="/Pages/about.html">О нас</a></li>
+                    <li><a href="/Pages/gallery.html">Галерея</a></li>
+                    <li><a href="/Pages/services.html">Услуги и аренда</a></li>
+                    <li><a href="/Pages/events.html">Мероприятия</a></li>
+                    <li><a href="/Pages/news.html">Новости</a></li>
+                    <li><a href="/Pages/contacts.html">Контакты</a></li>
+                    <li><a href="#">Политика конфиденциальности</a></li>
+                </ul>
+            </div>
+            <div class="footer-contacts-block">
+                <p class="footer-title">Контакты</p>
+                <div class="footer-contacts-wrapper">
+                    <div class="phone">
+                        <a class="title-contacts">+495 000 00 00</a>
+                        <p class="sub-contacts">Телефон</p>
+                    </div>
+                    <div class="email">
+                        <a class="title-contacts">vivat@gmail.com</a>
+                        <p class="sub-contacts">Email</p>
+                    </div>
+                    <div class="address">
+                        <a class="title-contacts">г.Москва, Замечательный проезд 1</a>
+                        <p class="sub-contacts">Адрес</p>
+                    </div>
+                    <div class="time">
+                        <p class="title-contacts">ПН-ВС 10:00 - 20:00</p>
+                        <p class="sub-contacts">Время работы</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-row flex-row">
+                <div class="footer-copyright">
+                    <p>&copy; КСК "Виват, Россия!"&nbsp;<span>2020</span>&nbsp;all rights reserved</p>
+                </div>
+                <div class="footer-developer">
+                    <p>Designed and template by&nbsp;<a href="">EasyWeb Studio</a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- footer end -->
+    <!-- global scripts -->
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=cab32a71-7231-49e3-a077-3623c1468b74&lang=ru_RU"
+        type="text/javascript"></script>
+    <script src="/JavaScripts/jquery-3.5.1.js"></script>
+    <script src="/JavaScripts/YandexMap/map.js"></script>
+    <script src="/JavaScripts/menu.js"></script>
+    <!-- global scripts end -->
+    <!-- page scripts -->
+
+    <!-- page scripts end -->
+</body>
+
+</html>

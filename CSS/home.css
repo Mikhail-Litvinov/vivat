@@ -304,3 +304,124 @@
 }
 
 /* third section end */
+
+/* media style */
+
+/* global media */
+
+@media screen and (min-width:0px) and (max-width:1024px) { 
+    .events-navigation {
+        padding: 0 1vh;
+        margin-bottom: 4vh;
+    }
+
+    .prev span::before, .next span::before {
+        font-size: 120%;
+    }
+
+    .events-blocks-wrapper {
+        width: calc(100% - 2vh);
+        padding: 0 1vh;
+    }
+
+    .events-block {
+        width: 50%;
+    }
+
+    .events-block:nth-child(3), .events-block:nth-child(4) {
+        display: none;
+    }
+
+    #calendar {
+        width: 90%;
+    }
+
+    .fc .fc-toolbar.fc-header-toolbar {
+        font-size: 71%;
+    }
+
+    .services-blocks-wrapper {
+        flex-wrap: wrap;
+        width: 90%;
+    }
+
+    .services-block {
+        width: 60vw;
+        height: 60vw;
+        margin-bottom: 2vh;
+    }
+}
+
+/* ipad */
+
+@media screen and (min-width:541px) and (max-width: 768px) { 
+    .events-navigation {
+        padding: 0 5vh;
+        margin-bottom: 10vh;
+    }
+
+    .prev span::before, .next span::before {
+        font-size: 200%;
+    }
+
+    .events-blocks-wrapper {
+        width: calc(100% - 10vh);
+        padding: 0 5vh;
+    }
+
+    .events-block {
+        width: 25%;
+    }
+
+    .events-block:nth-child(3), .events-block:nth-child(4) {
+        display: block;
+    }
+
+    .fc .fc-toolbar.fc-header-toolbar {
+        font-size: 100%;
+    }
+
+}
+
+/* ipad-pro */
+
+@media screen and (min-width:769px) and (max-width: 1024px) {
+
+    .prev span::before, .next span::before {
+        font-size: 200%;
+    }
+
+    .events-block {
+        width: 25%;
+        font-size: 200%;
+    }
+
+    .events-block:nth-child(3), .events-block:nth-child(4) {
+        display: block;
+    }
+
+    .events-navigation {
+        margin-bottom: 4vh;
+    }
+
+    .events-blocks-wrapper {
+        width: calc(100% - 2vh);
+        padding: 0 1vh;
+    }
+
+    .fc .fc-toolbar.fc-header-toolbar {
+        font-size: 100%;
+    }
+
+    .service-category {
+        font-size: 140%;
+    }
+
+    .service-title {
+        font-size: 200%;
+    }
+
+}
+
+
+/* media style end */

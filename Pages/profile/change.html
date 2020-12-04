@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/CSS/stylesheet.css">
+    <link rel="stylesheet" href="/fonts/Icons/css/animation.css">
+    <link rel="stylesheet" href="/fonts/Icons/css/fontello-codes.css">
+    <link rel="stylesheet" href="/fonts/Icons/css/fontello-embedded.css">
+    <link rel="stylesheet" href="/fonts/Icons/css/fontello-ie7-codes.css">
+    <link rel="stylesheet" href="/fonts/Icons/css/fontello-ie7.css">
+    <link rel="stylesheet" href="/fonts/Icons/css/fontello.css">
+    <link rel="stylesheet" href="/JavaScripts/calendar/lib/main.css">
+    <link rel="stylesheet" href="/CSS/main.css">
+    <link rel="stylesheet" href="/CSS/datepicker.css">
+    <link rel="stylesheet" href="/CSS/profile.css">
+
+</head>
+
+<body>
+    <!-- header -->
+    <header id="header">
+        <div class="header-container">
+            <div class="flex-row">
+                <div class="col-1-2 menu-button-container">
+                    <button class="menu-button">
+                        <div class="menu-ind">
+                            <div class="line"></div>
+                            <div class="line"></div>
+                        </div>
+                        <span>Меню</span>
+                    </button>
+                </div>
+                <div class="col-1-2 login-button-container">
+                    <button class="search-button"><span class="search-icon"></span></button>
+                    <button class="profile-button"><span class="profile-icon"></span>
+                    </button>
+                    <button class="login-button" id="open-enter-form">
+                        Войти
+                    </button>
+                    <div class="profile-preview-wrapper">
+                        <div class="profile-preview-row">
+                            <div class="profile-preview-photo">
+                                <img src="images/profile/114296480-businessman-avatar-icon-profession-logo-male-character-a-man-in-suit-people-specialists-flat-simple-.jpg" alt="" width="100%">
+                            </div>
+                            <div class="profile-preview-data">
+                                <div class="profile-preview-name">
+                                    <p>Иванов Иван Иванович</p>
+                                </div>
+                                <div class="profile-preview-address">
+                                    RU | Moscow
+                                </div>
+                            </div>
+                        </div>
+                        <div class="profile-preview-row" style="flex-wrap: wrap;">
+                            <a href="/Pages/profile/profile.html"><button class="profiel-preview-button">В профиль</button></a>
+                            <a href=""><button class="profiel-preview-button">Выйти</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- modal-menu -->
+        <div class="modal-menu">
+            <div class="menu-list-wrapper">
+                <ul class="menu-list">
+                    <li><a href="/index.html">Главная</a></li>
+                    <li><a href="/Pages/about.html">О нас</a></li>
+                    <li><a href="/Pages/gallery.html">Галерея</a></li>
+                    <li><a href="/Pages/services.html">Услуги и аренда</a></li>
+                    <li><a href="/Pages/events.html">Мероприятия</a></li>
+                    <li><a href="/Pages/news.html">Новости</a></li>
+                    <li><a href="/Pages/contacts.html">Контакты</a></li>
+                </ul>
+            </div>
+            <div class="menu-contacts-wrapper">
+                <ul class="contacts-list">
+                    <li><a href="#">+7 900 000 000</a></li>
+                    <li><a href="#">info@vivat.ru</a></li>
+                    <li><a href="#">г.Москва, Замечательный проспект 1</a></li>
+                </ul>
+                <ul class="social-links">
+                    <li><a href="#" class="vk-button"></a></li>
+                    <li><a href="#" class="facebook-icon"></a></li>
+                    <li><a href="#" class="instagram-icon"></a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- modal menu end -->
+        <!-- modal enter or register -->
+        <div class="modal-enter-wrapper">
+            <div class="unicorn-wrapper">
+                <div class="unicorn-content">
+                    <img src="/images/unicorn/1.png" alt="" width="100%">
+                </div>
+            </div>
+            <div class="modal-enter-content">
+                <span class="close-modal">x</span>
+                <div class="modal-enter-header">
+                    <button class="modal-enter-choose">Войти</button>
+                    <button class="modal-enter-choose">Регистрация</button>
+                </div>
+                <div class="modal-enter-content-wrapper">
+                    <p class="login-title">Войти</p>
+                    <label class="login-label" for="">Логин/email
+                        <input class="login-input" type="text" placeholder="example@gmail.com">
+                    </label>
+                    <label for="" class="password-label">Пароль
+                        <input type="text" class="password-input">
+                    </label>
+                    <div class="forgot-password-wrapper"><a href="" class="forgot-password">Забыли пароль?</a></div>
+                    <button class="login-button">Войти</button>
+                </div>
+                <div class="modal-register-content-wrapper">
+                    <p class="register-title">Регистрация</p>
+                    <label for="" class="surname-label">
+                        Имя
+                        <span class="required">*</span>
+                        <input type="text" class="surname-input" placeholder="Иванов">
+                    </label>
+                    <label for="" class="name-label">
+                        Фамилия
+                        <span class="required">*</span>
+                        <input type="text" class="name-input" placeholder="Иван">
+                    </label>
+                    <label for="" class="middle-name-label">
+                        Отчество
+                        <span class="required">*</span>
+                        <input type="text" class="middle-name-input" placeholder="Иванович">
+                    </label>
+                    <label for="" class="birth-date-label">
+                        Дата рождения
+                        <span class="required">*</span>
+                        <input type="text" class="datepicker-here">
+                    </label>
+                    <label for="" class="email-label">
+                        Адрес электронной почты
+                        <span class="required">*</span>
+                        <input type="text" class="email-input" placeholder="example@gmail.com">
+                    </label>
+                    <button class="login-button">Регистрация</button>
+                </div>
+            </div>
+        </div>
+        <!-- modal enter or register -->
+        <!-- modal search -->
+        <div class="search-wrapper">
+            <div class="search-container">
+                <input type="text" class="search-input" placeholder="Введите поисковой запрос">
+                <span class="search-icon"></span>
+            </div>
+            <span class="close-modal">x</span>
+        </div>
+        <!-- modal search end -->
+    </header>
+    <!-- header-end -->
+    <!-- content -->
+    <div id="content">
+        <div class="profile-content content-block">
+            <div class="profile-menu-container">
+                <div class="profile-menu-content">
+                    <ul class="profile-menu-list">
+                        <li class="profile-menu-list-element active"><a href="profile.html">Профиль</a></li>
+                        <li class="profile-menu-list-element"><a href="registration.html">Регистрация на событие</a></li>
+                        <li class="profile-menu-list-element"><a href="my-events.html">Мои события</a></li>
+                    </ul>
+                </div>
+                <div class="profile-menu-button">
+                    <p>Меню профиля</p>
+                </div>
+            </div>
+            <div class="profile-row flex-row">
+                <div class="personal-wrapper">
+                    <div class="profile-photo-wrapper">
+                        <img src="/images/profile/114296480-businessman-avatar-icon-profession-logo-male-character-a-man-in-suit-people-specialists-flat-simple-.jpg" 
+                        alt="" width="100%">
+                    </div>
+                    <div class="change-photo-wrapper">
+                        <span class="change-photo"></span>
+                    </div>
+                    <div class="profile-name">
+                        <p class="name-p">Иванов Иван Иванович</p>
+                        <p class="state-p"><span>RU</span>,<span>Moscow</span></p>
+                    </div>
+                </div>
+                <div class="end-profile-wrapper">
+                    <button class="login-button">Выход</button>
+                </div>
+            </div>
+            <div class="profile-row flex-row">
+                <label class="profile-element-wrapper">
+                    <p class="name-title"><span class="required">*</span>ФИО</p>
+                    <input class="surname-data-input" placeholder="Иванов">
+                    <input class="name-data-input" placeholder="Иван">
+                    <input class="middle-name-data-input" placeholder="Иванович">
+                </label>
+                <label class="profile-element-wrapper">
+                    <p class="birthday-title"><span class="required">*</span>Дата рождения:</p>
+                    <input class="datepicker-here" placeholder="11.11.1990">
+                </label>
+                <label class="profile-element-wrapper">
+                    <p class="email-title"><span class="required">*</span>email:</p>
+                    <input class="email-data-input" placeholder="example@gmail.com">
+                </label>
+                <label class="profile-element-wrapper">
+                    <p class="phone-title"><span class="required">*</span>Номер телефон:</p>
+                    <input class="phone-data-input" placeholder="+7 (900) 000 00 00">
+                </label>
+                <label class="profile-element-wrapper">
+                    <p class="address-title"><span class="required">*</span>Адрес</p>
+                    <input class="address-data-input" placeholder="Россия, Москва, Замечательный проед, 1">
+                </label>
+                <div class="profile-element-wrapper">
+                    <p class="gender-title"><span class="required">*</span>Пол:</p>
+                    <input type="checkbox" id="male" class="custom-checkbox">
+                    <label class="gender-input" for="male">
+                        Мужской
+                    </label>
+                    <input type="checkbox" id="female" class="custom-checkbox">
+                    <label class="gender-input" for="female">
+                        Женский
+                    </label>
+                </div>
+            </div>
+            <div class="profile-row flex-row">
+                <div class="change-button-wrapper">
+                    <button class="change-button">Сохранить</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- content end -->
+    <!-- footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-map-block" id="map">
+
+            </div>
+
+            <div class="footer-navigation-block">
+                <p class="footer-title">Навигация</p>
+                <ul class="footer-menu-list">
+                    <li><a href="/index.html">Главная</a></li>
+                    <li><a href="/Pages/about.html">О нас</a></li>
+                    <li><a href="/Pages/gallery.html">Галерея</a></li>
+                    <li><a href="/Pages/services.html">Услуги и аренда</a></li>
+                    <li><a href="/Pages/events.html">Мероприятия</a></li>
+                    <li><a href="/Pages/news.html">Новости</a></li>
+                    <li><a href="/Pages/contacts.html">Контакты</a></li>
+                    <li><a href="#">Политика конфиденциальности</a></li>
+                </ul>
+            </div>
+            <div class="footer-contacts-block">
+                <p class="footer-title">Контакты</p>
+                <div class="footer-contacts-wrapper">
+                    <div class="phone">
+                        <a class="title-contacts">+495 000 00 00</a>
+                        <p class="sub-contacts">Телефон</p>
+                    </div>
+                    <div class="email">
+                        <a class="title-contacts">vivat@gmail.com</a>
+                        <p class="sub-contacts">Email</p>
+                    </div>
+                    <div class="address">
+                        <a class="title-contacts">г.Москва, Замечательный проезд 1</a>
+                        <p class="sub-contacts">Адрес</p>
+                    </div>
+                    <div class="time">
+                        <p class="title-contacts">ПН-ВС 10:00 - 20:00</p>
+                        <p class="sub-contacts">Время работы</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-row flex-row">
+                <div class="footer-copyright">
+                    <p>&copy; КСК "Виват, Россия!"&nbsp;<span>2020</span>&nbsp;all rights reserved</p>
+                </div>
+                <div class="footer-developer">
+                    <p>Designed and template by&nbsp;<a href="">EasyWeb Studio</a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- footer end -->
+    <!-- global scripts -->
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=cab32a71-7231-49e3-a077-3623c1468b74&lang=ru_RU"
+        type="text/javascript"></script>
+    <script src="/JavaScripts/jquery-3.5.1.js"></script>
+    <script src="/JavaScripts/YandexMap/map.js"></script>
+    <script src="/JavaScripts/menu.js"></script>
+    <script src="/JavaScripts/date-picker/datepicker.js"></script>
+    <!-- global scripts end -->
+    <!-- page scripts -->
+    <script src="/JavaScripts/profile.js"></script>
+    <!-- page scripts end -->
+</body>
+
+</html>
