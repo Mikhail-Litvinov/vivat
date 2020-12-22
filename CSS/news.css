@@ -38,6 +38,7 @@
     display  : flex;
     flex-wrap: nowrap;
     height: auto;
+    position: relative;
 }
 
 .right-column {
@@ -389,6 +390,16 @@
 
     .left-column, .right-column {
         width: 100%;
+    }
+    
+    .right-column {
+        position: absolute;
+        top: 0;
+        z-index: 1;
+    }
+
+    .left-column {
+        padding-top: 7vh;
     }
 
     .blog-img {
